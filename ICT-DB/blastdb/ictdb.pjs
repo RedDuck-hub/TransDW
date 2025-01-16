@@ -1,0 +1,24 @@
+{
+  "version": "1.2",
+  "dbname": "ictdb",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "all.fasta",
+  "number-of-letters": 484362,
+  "number-of-sequences": 1202,
+  "last-updated": "2024-12-03T18:18:00",
+  "number-of-volumes": 1,
+  "bytes-total": 670089,
+  "bytes-to-cache": 495269,
+  "files": [
+    "ictdb.pdb",
+    "ictdb.phr",
+    "ictdb.pin",
+    "ictdb.pog",
+    "ictdb.pos",
+    "ictdb.pot",
+    "ictdb.psq",
+    "ictdb.ptf",
+    "ictdb.pto"
+  ]
+}
