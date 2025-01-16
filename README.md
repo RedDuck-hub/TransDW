@@ -8,7 +8,7 @@ TransDW, a novel multi-scale workflow for transporter discovery, which integrate
 
 
 
-## Environment Setup
+## Environment setup
 
 TransDW is developed based on Python 3.8. Please run the following code to import the conda environment:
 
@@ -16,9 +16,24 @@ TransDW is developed based on Python 3.8. Please run the following code to impor
 conda env create -f environment.yml
 ```
 
-## Model Usage
+
+
+## Model training and prediction
 
 Here, we provide the training and usage code for three models in TransDW. Some data is not included due to its large storage size; please download it from Zenodo: https://zenodo.org/records/14666289
+
+
+
+## Workflow execution
+
+In the **Workflow** folder, code is provided to run UTP, DirectIO, SPOTIC, and Blastp simultaneously. The program accepts three parameters as input:
+
+- InChI of the substrate: Used for the specific substrate prediction of transporters. Multiple transporter candidates can be accepted in a single calculation, but only one substrate can be provided.
+- Sequence identity threshold: Only proteins with sequence similarity to the candidate exceeding this threshold will be included in the Blastp search results.
+- Transporter input file: Contains one or more transporters to be predicted. The file format must be CSV and must include the columns "ID" and "Sequence", please refer to ***Help*** for details.
+
+Temporary files generated during execution are saved by default in the **templates** folder in the same directory. Do not delete these files before the program finishes running. The final calculation results will include prediction scores from the three models as well as the Blastp search results.
+
 
 
 ## Help
