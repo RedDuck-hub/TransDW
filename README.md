@@ -15,3 +15,14 @@ TransDW is developed based on Python 3.8. Please run the following code to impor
 ```
 conda env create -f environment.yml
 ```
+
+## Model Usage
+
+Here, we provide the training and usage code for three models in TransDW. Some data is not included due to its large storage size; please download it from Zenodo: https://zenodo.org/records/14666289
+
+
+## Help
+
+- The operation of TransDW requires specific versions of Python libraries to ensure the correct functioning of the program. We recommend using the anaconda environment configuration provided here;
+- Please ensure that the column names in the input files of the program are correct. For example, the protein ID can be represented by Uniprot ID or accession number, but not by pure numbers. There is no restriction on the choice of substrate names. For more details, please refer to the example files in each folder;
+- TransDW utilizes the pre-trained ESM1b model to embed protein sequences. When using the ESM1b model for the first time, its pre-trained configuration files will be automatically downloaded to the local computing environment.
